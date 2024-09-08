@@ -9,8 +9,43 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
+	<!-- Font "Sarabun" -->
 	<title>{%block title%}Untitle{%endblock%}</title>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;400&display=swap" rel="stylesheet">
+   <!-- Font "MITR" -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400&display=swap" rel="stylesheet">
+	<!-- Font "Prompt" -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:wght@100;400&display=swap" rel="stylesheet">
+	<nav class="bg-amber border-amber-300 py-2.5 bg-amber-500 w-full"> 
+        <div class="flex flex-wrap items-center justify-start max-w-screen-xl pl-0 max-w-full"> 
+            <a href="#" class="flex items-center">
+                <img src="https://thaistationpayson.com/wp-content/uploads/2023/07/Menu-Plates-01.png" class="h-4 mr-3 sm:h-9" alt="logo">
+            </a>
+            <div class="items-center justify-start w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2"> 
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="/"
+                            class="text-gray-50 font-sarabun" 
+                            aria-current="page">หน้าแรก</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-gray-50 font-sarabun">ตารางเทียบแคลอรี่</a>
+                    </li>
+                    <li>
+                        <a href="myself"
+                            class="text-gray-50 font-sarabun">ผู้จัดทำ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 	{% compress css %}
 	<link rel="stylesheet"
 		href="{% static 'src/output.css' %}">

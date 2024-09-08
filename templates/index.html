@@ -1,21 +1,55 @@
 {% extends "_base.html" %}
+{%load static%}
 {%block title%}
-	Home
+	หน้าแรก
 {%endblock%}
 {% block content %}
-<div class="box-content h-32 w-32 border-4 border-slate-500 p-4 text-center rounded">
-	Hello
-</div>
-<div class="box-border h-auto w-44 p-4 border-4 border-slate-500 mt-40">
-	When controlling the flow of text, using the CSS property
-	<span class="inline bg-slate-500 text-slate-50">display: inline</span>
-	will cause the text inside the element to wrap normally. While using the
-	property
-	<span class="inline-block bg-slate-500 text-slate-50"
-	>display: inline-block</span>
-	will wrap the element to prevent the text inside from extending beyond its
-	parent. Lastly, using the property
-	<span class="block bg-slate-500 text-slate-50">display: block</span> will put
-	the element on its own line and fill its parent.
-</div>
+	<h1 class="text-xl text-black text-center underline mt-4 font-prompt">อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญา</h1>
+	<div class="flex flex-wrap justify-center gap-8 mt-4">
+		<div class="max-w-sm text-center">
+			<img alt="" src="{% static 'img/card-06.jpg'%}" class="h-36 w-36 rounded-full object-cover mx-auto" />
+			<div class="px-4 py-4">
+				<h3 class="font-bold text-xl mb-2 font-mitr">ผัดไทหมื่นปีห่อใบบัว</h3>
+				<p class="text-gray-700 text-base font-sarabun">
+					ผัดไทยเป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีความโดดเด่นและมีความเป็นเอกลักษณ์ที่มีความประณีตสวยงาม ของจังหวัดอุบลราชธานี 
+				</p>
+				<div class="py-4">
+					<a href="menu1" class="bg-gray-500 hover:bg-blue-700 text-white py-2 px-4 font-sarabun">
+						เรียนรู้เพิ่มเติม >>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-wrap justify-center gap-8">
+			<div class="max-w-sm text-center">
+				<img alt="" src="{% static 'img/card-02.jpg'%}" class="h-36 w-36 rounded-full object-cover mx-auto" />
+				<div class="px-4 py-4">
+					<h3 class="font-bold text-xl mb-2 font-mitr">ปลาส้มทรงเครื่องสมุนไพร</h3>
+					<p class="text-gray-700 text-base font-sarabun">
+						ปลาส้มทรงเครื่องสมุนไพร เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีความโดดเด่นและมีความเป็นเอกลักษณ์ของจังหวัดอุบลราชธานี 
+					
+					</p>
+					<div class="py-4">
+						<a href="menu2" class="bg-gray-500 hover:bg-blue-700 text-white py-2 px-4 font-sarabun">
+							เรียนรู้เพิ่มเติม >>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-wrap justify-center gap-8">
+				<div class="max-w-sm text-center">
+					<img alt="" src="{% static 'img/card-03.jpg'%}" class="h-36 w-36 rounded-full object-cover mx-auto" />
+					<div class="px-4 py-4">
+						<h3 class="font-bold text-xl mb-2 font-mitr">หมี่กะทิ</h3>
+						<p class="text-gray-700 text-base font-sarabun">
+							หมี่กะทิ เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่น มีความโดดเด่นและมีเอกลักษณ์เฉพาะที่มีความประณีตสวยงาม 
+						
+						</p>
+						<div class="py-4">
+							<a href="menu3" class="bg-gray-500 hover:bg-blue-700 text-white py-2 px-4 font-sarabun">
+								เรียนรู้เพิ่มเติม >>
+							</a>
+						</div>
+					</div>
+				</div>
 {% endblock content %}

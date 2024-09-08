@@ -4,7 +4,13 @@ module.exports = {
     './templates/**/*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        sarabun : ['Sarabun'],
+        mitr : ['Mitr'],
+        prompt : ['Prompt'],
+      }
+    },
   },
   plugins: [],
 }
